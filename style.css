@@ -1,0 +1,447 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: raleway, Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+/********** HEADER/ MAIN SETTINGS ************/
+header{
+    display: flex;
+    width: 100%;
+}
+
+main, header{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+}
+/***************** LOGO ************/
+.logoReservia img{
+    height: 55px;
+    width: 130px;
+    object-fit: contain;
+}
+
+/************** NAV SECTION ****************/
+.navMenu{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    font-weight: 500;
+}
+
+.navMenu a{
+    padding: 20px;
+    color: rgb(95, 95, 95);
+    text-decoration: none;
+}
+
+.navMenu a:hover{
+    border-top: 1px solid #0065FC;
+    cursor: pointer;
+}
+
+.navMenuResponsive{
+    display: none;
+}
+
+/***************** SEARCHBAR/ RESPONSIVE SEARCHBAR SECTION **********************/
+.searchbar{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: inline-flex;
+    height: 50px;
+    width: 100%;
+}
+
+.searchbar label{
+    color: #4d4d4d;
+}
+
+.searchbar i{
+    background-color: #F2F2F2;
+    padding: 17px;
+    border-radius: 15px 0px 0px 15px;
+    margin-right: 0;
+}
+
+.searchbar input{
+    border: 1px #F2F2F2 solid;
+    height: 50px;
+    width: 12%;
+}
+
+.searchbar button{
+    border: none;
+    background-color: #0065FC;
+    height: 50px;
+    width: 150px;
+    border-radius: 0px 15px 15px 0px;
+    font-family: raleway, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 105%;
+    color: #F2F2F2;
+    cursor: pointer;
+}
+
+.searchbar ::placeholder{
+    margin-left: 10px;
+}
+
+.responsiveSearchbar{
+    display: none;
+    width: 100%;
+}
+
+/************************** FILTERS SECTION *******************************/
+.filters{
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.filtersTitle{
+    margin-right: 5%;
+}
+
+.subFilters{
+    display: flex;
+    align-items: center;
+    margin-right: 1.8rem;
+    border: 2px solid #F2F2F2;
+    border-radius: 1.8rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition-duration: 0.2s;
+    transition: scale, 0.2s ease;
+    box-shadow: 0px 0px 15px rgb(247, 247, 247);
+}
+
+.subFilters i{
+    padding: 1.2rem;
+    background-color: #eaf2ff;
+    border-radius: 2rem;
+    color: #0065FC;
+}
+
+.subFilters p{
+    padding: 0 20px;
+}
+
+.subFilters:hover{
+    transform: scale(1.02);
+    background-color: #0066ff;
+    color: white;
+    cursor: pointer;
+}
+
+.subFilters:active{
+    transform: scaleZ(1);
+}
+
+/************** HOSTING/ MOST POPULAR SECTION **************/
+.info{
+    display: inline-flex;
+    margin-left: 0;
+    width: 450px;
+}
+
+.info i{
+    margin-right: 10px;
+    margin: auto;
+    font-size: larger;
+    color:#0065FC;
+}
+
+.mainContent{
+    display: flex;
+    width: 100%;
+}
+
+.hosting{
+    flex-wrap: wrap;
+    width: 60%;
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    margin-right: 2%;
+}
+
+.hostingArticle{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.hosting article{
+    padding: 0.5rem;
+    margin: 1rem;
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 1rem;
+    transition: scale, 0.2s ease-in;
+    box-shadow: 0px 0px 10px rgb(211, 211, 211);
+}
+
+.hosting article:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.hostingFigure img{
+    display: inline-flex;
+    width: 240px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+
+.hostingFigure figcaption{
+    padding: 5px;
+}
+
+.hostingFigure figcaption span{
+    font-weight: 600;
+    font-size: large;
+}
+
+.iNoColor{
+    color: rgb(212, 212, 212);
+}
+
+.iColor{
+    color: #0065FC;
+}
+
+/*************** MOST POPULAR ***********/
+.mostPopular{
+    height: 100%;
+    width: 35%;
+    background-color: #F2F2F2;
+    border-radius: 1rem;
+}
+
+.mostPopularArticle{
+    width: 85%;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: scale, 0.2s ease-in;
+}
+
+.mostPopularArticle h2{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.mostPopularArticleMain{ 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 130px;
+    padding: 0.5rem;
+    background-color: white;
+    margin: 1.5rem auto;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 10px rgb(211, 211, 211);
+    transition: scale, 0.2s ease;
+}
+
+.mostPopularArticleMain:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.mostPopularArticleMain img{
+    width: 30%;
+    height: 130px;
+    object-fit: cover;
+    float: left;
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.mostPopularArticleContent{
+    display: block;
+    flex-direction: column;
+    margin-right: auto;
+    justify-content: space-around;
+}
+
+.mostPopularArticleContent, h3, p{
+    margin: 5px px 5px 5px;
+}
+
+/************** ACTIVITY SECTION ***************/
+.activity{
+    display: inline-flex;
+    margin-top: 1rem;
+    width: 100%;
+    height: 500px;
+}
+
+.activity article{
+    margin: 1rem 1rem;
+    transition: scale, 0.2s ease;
+}
+
+.activity article:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.WideStyle img{
+    height: 485px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0rem 0rem;
+    box-shadow: 0px 0px 20px rgb(211, 211, 211);
+}
+
+.noWideStyle img{
+    flex-direction: column;
+    height: 211px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0rem 0rem;
+    box-shadow: 0px 0px 20px rgb(211, 211, 211);
+}
+
+.activityTitle{
+    border-radius: 0rem 0rem 1rem 1rem;
+    box-shadow: 0px 0px 20px rgb(211, 211, 211);
+    margin-top: -10px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 1rem;
+}
+
+.activityTitle h3{
+    padding: 2rem;
+}
+
+footer{
+    background-color: #F2F2F2;
+    width: 100%;
+    margin-top: 5rem;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    padding: 0.5rem 0rem;
+}
+
+footer ul li a:hover{
+    cursor: pointer;
+    text-decoration: underline 1px #414141;
+}
+
+@media screen and (max-width: 320px){
+    header{
+        flex-wrap: wrap;
+    }
+    .navMenu a{
+        padding: 5px;
+        justify-content: flex-start;
+        text-decoration: none;
+    }
+
+    .signUp{
+        display: none;
+    }
+    .info{
+        width: 100%;
+    }
+
+    .searchbar{
+        display: none;
+    }
+
+    .responsiveSearchbar{
+        display: flex;
+
+    }
+
+    .filters{
+        flex-direction: column;
+    }
+
+    .subFilters{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin-right: 1.8rem;
+        border: 2px solid #F2F2F2;
+        border-radius: 1.8rem;
+        cursor: pointer;
+        font-weight: 600;
+        transition-duration: 0.2s;
+        transition: scale, 0.2s ease;
+        box-shadow: 0px 0px 15px rgb(247, 247, 247);
+    }
+    .mainContent{
+        flex-direction: column-reverse;
+        padding: 0.5rem;
+        width: auto;
+    }
+
+    .mainContent h2{
+        font-size: larger;
+    }
+
+    .mostPopular{
+        background-color: white;
+        width: 100%;
+    }
+
+    .mostPopularArticle{
+        width: 100%;
+        height: 600px;
+        background-color: #F2F2F2;
+        border-radius: 1rem;
+        transition: scale, 0.2s ease-in;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .mostPopularArticleMain{
+        display: flex;
+        justify-content: center;
+        width: 85%;
+        height: 130px;
+        background-color: white;
+        border-radius: 1.5rem;
+        box-shadow: 0px 0px 10px rgb(211, 211, 211);
+        transition: scale, 0.2s ease;
+    }
+
+    .hosting{
+        width: 100%;
+        padding: 0;
+        background-color: white;
+    }
+
+    .activity{
+        height: fit-content;
+        flex-direction: column;
+    }
+    
+    .activity article img{
+        height: 240px;
+    }
+
+    .activity figcaption{
+        font-size: small;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+}
