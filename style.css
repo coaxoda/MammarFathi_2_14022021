@@ -42,13 +42,18 @@ main, header{
     border-top: transparent 3px solid;
 }
 
+.navMenu a:hover{
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+}
+
 .signUp{
     font-weight: 600;
     color: #0065FC;
 }
 
-.navMenu a:hover{
-    border-top: 3px solid #0065FC;
+.signUpResponsive{
+    display: none;
 }
 
 .navMenuResponsive{
@@ -112,16 +117,18 @@ main, header{
     display: flex;
     margin-top: 2rem;
     flex-wrap: wrap;
+    font-weight: 600;
 }
 
 .filtersTitle{
-    margin-right: 5%;
+    margin-right: 50px;
+    line-height: 55px;
 }
 
 .subFilters{
     display: flex;
     align-items: center;
-    margin-right: 1.8rem;
+    margin-right: 1.5rem;
     border: 2px solid #F2F2F2;
     border-radius: 1.8rem;
     cursor: pointer;
@@ -132,9 +139,10 @@ main, header{
 }
 
 .subFilters i{
-    padding: 1.2rem;
+    padding: 1.3rem;
     background-color: #eaf2ff;
     border-radius: 2rem;
+    margin: -1px;
     color: #0065FC;
 }
 
@@ -157,6 +165,7 @@ main, header{
 .info{
     display: inline-flex;
     margin-left: 0;
+    margin: 30px 0px;
     width: 450px;
 }
 
@@ -225,6 +234,14 @@ main, header{
     font-size: large;
 }
 
+.moreHostingContent{
+    width: 100%;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
 .iNoColor{
     color: rgb(212, 212, 212);
 }
@@ -235,7 +252,6 @@ main, header{
 
 /*************** MOST POPULAR ***********/
 .mostPopular{
-    height: 100%;
     width: 35%;
     background-color: #F2F2F2;
     border-radius: 1rem;
@@ -290,6 +306,7 @@ main, header{
 
 .mostPopularArticleContent{
     display: block;
+    margin: 0 10px;
     flex-direction: column;
     margin-right: auto;
     justify-content: space-around;
@@ -300,6 +317,10 @@ main, header{
 }
 
 /************** ACTIVITY SECTION ***************/
+.activityResponsive1024{
+    display: none;
+}
+
 .activityMainTitle h2{
     margin: 2% 2%;
 }
@@ -342,6 +363,7 @@ main, header{
     box-shadow: 0px 0px 20px rgb(211, 211, 211);
     margin-top: -10px;
     height: 50px;
+    overflow: hidden;
     line-height: 50px;
     padding: 0px 1rem;
 }
@@ -438,8 +460,11 @@ footer ul li a:hover{
         font-weight: 600;
     }
 
+    .signUpResponsive:hover{
+        cursor: pointer;
+    }
+
     .info{
-        font-size: larger;
         width: 100%;
     }
     .info i{
@@ -488,6 +513,7 @@ footer ul li a:hover{
     }
     .filters{
         flex-direction: column;
+        height: auto;
     }
 
     .filtersTitle{
@@ -527,7 +553,7 @@ footer ul li a:hover{
     }
 
     .mostPopularArticle{
-        width: 100%;
+        width: 100% !important;
         height: 600px;
         background-color: #F2F2F2;
         border-radius: 0;
@@ -576,9 +602,8 @@ footer ul li a:hover{
     }
 
     .hosting h2{
-        display: flex;
-        justify-content: center;
         font-size: larger;
+        margin: 1rem;
     }
 
     .hosting article{
@@ -615,10 +640,8 @@ footer ul li a:hover{
     }
     
     .activityMainTitle h2{
-        display: flex;
-        justify-content: center;
         font-size: larger;
-        margin-top: 1rem;
+        margin: 1rem;
     }
 
     .activity article img{
@@ -634,3 +657,152 @@ footer ul li a:hover{
     }
 }
 
+
+/*********************************** RESPONSIVE TABLETTE ******************************/
+/*************************************************************************************/
+
+
+@media screen and (max-width: 1024px){
+    
+    .logoReservia{
+        padding: 0rem 1rem;
+    }
+
+    .navMenu a{
+        color: rgb(95, 95, 95);
+        text-decoration: none;
+        padding: 20px;
+        border-top: transparent 3px solid;
+    }
+
+    .filters{
+        display: flex;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+        font-weight: 600;
+    }
+
+    .mainTitle{
+        padding: 1rem;
+    }
+
+    .searchbar{
+        margin: 0px 1rem;
+    }
+
+    .searchbar input{
+        border: 1px #F2F2F2 solid;
+        height: 50px;
+        width: 20%;
+        padding: 10px;
+    }
+
+    .hosting{
+        flex-wrap: wrap;
+        background-color: white;
+        width: 100%;
+        border-radius: 1.5rem;
+        margin-top: 1rem;
+        padding: 0;
+    }
+
+    .mainContent{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .mostPopular{
+        width: 100%;
+        background-color: #F2F2F2;
+        border-radius: 1rem;
+    }
+
+    .mostPopularArticle{
+        width: 95%;
+        border-radius: 1rem;
+        transition: scale, 0.2s ease-in;
+    }
+
+    .mostPopularArticleMain{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        height: 130px;
+        padding: 0.5rem;
+        background-color: white;
+        margin: 1.5rem auto;
+        border-radius: 1.5rem;
+        box-shadow: 0px 0px 10px rgb(211, 211, 211);
+        transition: scale, 0.2s ease;
+    }
+
+    .mostPopularArticleContent{
+        display: block;
+        margin: 0px 15px;
+        flex-direction: column;
+        margin-right: auto;
+        justify-content: space-around;
+    }
+
+    .activity{
+        display: none;
+    }
+
+    .activityResponsive1024{
+        display: inline-flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .activityResponsive1024 article{
+        flex-wrap: wrap;
+        width: 340px;
+        padding: 1rem;
+        transition: scale, 0.2s ease;
+    }
+
+    .activityResponsive1024 article:hover{
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    .activityResponsive1024 img{  
+        width: 340px;
+        height: 210px;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0rem 0rem;
+    }
+
+    .activityResponsive1024 figcaption{
+        width: 100%;
+    }
+
+    .activityResponsive1024 h3{
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width: 760px){
+
+    .hosting Article{
+        width: 90%;
+    }
+
+    .hosting img{
+        width: 100%;
+    }
+
+    .activityResponsive1024{
+        width: 100%;
+    }
+
+    .activityResponsive1024 article{
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .activityResponsive1024 img{
+        width: 100%;
+    }
+}
