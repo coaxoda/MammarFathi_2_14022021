@@ -11,60 +11,45 @@
 </head>
 
 <body>
-    <!----------------------- HEADER START ----------------------->
+    <!--HEADER-->
     <header>
-        <!----------------------- LOGO START ----------------------->
+        <!--LOGO-->
         <div class="logoReservia">
             <img src="images/logo/Reservia@3x.png" alt="Logo de Reservia">
             <a class="signUpResponsive">S'inscrire</a>
         </div>
-        <!----------------------- LOGO END ----------------------->
-
-        <!----------------------- NAV START ----------------------->
+        <!--NAVBAR-->
         <nav class="navMenu">
             <a href="#host">Hébergements</a>
             <a href="#activity">Activités</a>
             <a href="#"><span class="signUp">S'inscrire</span></a>
         </nav>
-        <!----------------------- NAV END ----------------------->
-
-            <!----------------------- NAV RESPONSIVE START ----------------------->
-            
+            <!--RESPONSIVE NAVBAR-->            
             <nav class="navMenuResponsive">
                 <a href="#host">Hébergements</a>
                 <a href="#activity">Activités</a>
             </nav>
-            <!----------------------- NAV RESPONSIVE END ----------------------->
-
-    <!----------------------- HEADER END ----------------------->
     </header>
-    
-    <!----------------------- MAIN START ----------------------->
+    <!--MAIN-->
     <main>
-        <!----------------------- MAINTITLE START ----------------------->
+        <!--MAIN TITLE-->
         <div class="mainTitle">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <h3>En plein centre ville ou en pleine nature</h3>
         </div>
-        <!----------------------- MAINTITLE AND ----------------------->
-
-        <!----------------------- SEARCHBAR START ----------------------->
+        <!--SEARCHBAR-->
         <form class="searchbar">
             <label><i class="fas fa-map-marker-alt"></i></label>
             <input type="search" id="searchbar" placeholder="Marseille, France">
             <button>Rechercher</button>
         </form>
-        <!----------------------- SEARCHBAR END ----------------------->
-
-            <!----------------------- RESPONSIVE SEARCHBAR START ----------------------->
+        <!--RESPONSIVE SEARCHBAR-->
             <form class="responsiveSearchbar">
                 <label><i class="fas fa-map-marker-alt pointer"></i></label>
                 <input type="search" id="responsiveSearchbar" placeholder="Marseille, France">
                 <button><i class="fas fa-search"></i></button>
             </form>
-            <!----------------------- RESPONSIVE SEARCHBAR END ----------------------->
-
-            <!----------------------- FILTERS START ----------------------->
+            <!--FILTERS-->
             <div class="filters">
                 <label class="filtersTitle">Filtres</label>
                 <div class="subFilters">
@@ -84,107 +69,94 @@
                     <p>Animaux autorisés</p>
                 </div>
             </div>
-            <!----------------------- FILTERS END START ----------------------->
-
-            <!----------------------- INFO TOP START ----------------------->
+            <!--INFO TOP-->
             <figure class="info">
                 <i class="fas fa-info-circle"></i>
-                <figcaption>Plus de 500 logements sont disponibles dans cette ville</figcaption>
+                <div class="hostingContent">Plus de 500 logements sont disponibles dans cette ville</div>
             </figure>
-            <!----------------------- INFO TOP END ----------------------->
-    
-            <!----------------------- MAIN CONTENT START ----------------------->
-            <section class="mainContent">
-
-                <!----------------------- HOSTING START START ----------------------->
+            <!--MAIN CONTENT-->
+            <div class="mainContent">
+                <!--HOST-->
+                <a id="host"></a>
                 <section class="hosting">
-                    <h2>Hébergements à Marseille</h2><!-- HOSTING TITLE -->
-                    <!-------------- HOSTING ARTICLE START --------------->
+                    <h2>Hébergements à Marseille</h2>
                     <div class="hostingArticle"> 
                         <article class="hostingFigure">
                             <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre Auberge la Cannebière">
-                            <figcaption>
-                                <span>Auberge la Cannebière</span><br />
+                            <div class="hostingContent">
+                                <h3>Auberge la Cannebière</h3><br />
                                 Nuit à partir de <span>25€</span><br />
                                         <i class="fas fa-star iColor" aria-hidden="true"></i>
                                         <i class="fas fa-star iColor" aria-hidden="true"></i>
                                         <i class="fas fa-star iColor" aria-hidden="true"></i>
                                         <i class="fas fa-star iColor" aria-hidden="true"></i>
                                         <i class="fas fa-star iNoColor" aria-hidden="true"></i>
-                            </figcaption>
+                            </div>
                         </article>
-                        <!------------------------------------------------------------------------------------------------------------------->
                         <article class="hostingFigure">
                             <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre de l'Hotel du port">
-                            <figcaption>
-                                <span>Hôtel du port</span><br />
+                            <div class="hostingContent">
+                                <h3>Hôtel du port</h3><br />
                                 Nuit à partir de <span>52€</span><br />
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
-                            </figcaption>
+                            </div>
                         </article>
-                        <!------------------------------------------------------------------------------------------------------------------->
                         <article class="hostingFigure">
                             <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre de l'Hotel Les Mouettes">
-                            <figcaption>
-                                <span>Hôtel Les mouettes</span><br />
+                            <div class="hostingContent">
+                                <h3>Hôtel Les mouettes</h3><br />
                                 Nuit à partir de <span>76€</span><br />
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iNoColor" aria-hidden="true"></i>
-                            </figcaption>
+                            </div>
                         </article>
-                        <!------------------------------------------------------------------------------------------------------------------->
                         <article class="hostingFigure">
                             <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre Auberge de la mer">
-                            <figcaption>
-                                <span>Auberge de la mer</span><br />
+                            <div class="hostingContent">
+                                <h3>Auberge de la mer</h3><br />
                                 Nuit à partir de <span>46€</span><br />
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iNoColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iNoColor" aria-hidden="true"></i>
-                            </figcaption>
+                            </div>
                         </article>
-                        <!------------------------------------------------------------------------------------------------------------------->
                         <article class="hostingFigure">
                             <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Chambre Auberge le Panier">
-                            <figcaption>
-                                <span>Auberge Le panier</span><br />
+                            <div class="hostingContent">
+                                <h3>Auberge Le panier</h3><br />
                                 Nuit à partir de <span>23€</span><br />
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iNoColor" aria-hidden="true"></i>
-                            </figcaption>
+                            </div>
                         </article>
-                        <!------------------------------------------------------------------------------------------------------------------->
                         <article class="hostingFigure">
                             <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Chambre de l'Hotel chez Amina">
-                            <figcaption>
-                                <span>Hôtel chez Amina</span><br />
+                            <div class="hostingContent">
+                                <h3>Hôtel chez Amina</h3><br />
                                 Nuit à partir de <span>96€</span><br />
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
-                            </figcaption>
+                            </div>
                         </article>
                     </div>
                     <a class="moreHostingContent" href="#">Afficher plus</a>
-                    <!-------------- HOSTING ARTICLE END --------------->
                 </section>
-                <!----------------------- HOSTING END ----------------------->
-
-                <!------------------------------------------ MOST POPULAR START -------------------------------------------->
+                <!--MOST POPULAR-->
                 <section class="mostPopular">
                     <div class="mostPopularArticle">
                         <h2>Les plus populaire<i class="fas fa-chart-line" aria-hidden="true"></i></h2>
@@ -202,7 +174,6 @@
                                 </div>
                             </div>
                         </article>
-                        <!---------------------------------------------------------------------------------------------------------------------->
                         <article class="mostPopularArticleMain">
                             <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre Au coeur de l'eau Chambre d'hôtes">
                             <div class="mostPopularArticleContent">
@@ -217,7 +188,6 @@
                                 </div>
                             </div>
                         </article>
-                        <!---------------------------------------------------------------------------------------------------------------------->
                         <article class="mostPopularArticleMain">
                             <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre de l'Hôtel Tout bleue et Blanc">
                             <div class="mostPopularArticleContent">
@@ -230,135 +200,117 @@
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                     <i class="fas fa-star iColor" aria-hidden="true"></i>
                                 </div>
-                                </div>
                             </div>
                         </article>
                     </div>
                 </section>
-                <!----------------------- MOST POPULAR END ----------------------->
-            </section>
-            <!----------------------- MAIN CONTENT END ----------------------->
-            
-            <!----------------------- ACTIVITY START ----------------------->
-
-            <!--------- ACTIVITY TITLE START --------->
+            </div>
+            <!--ACTIVITY-->
+            <a id="activity"></a>
             <div class="activityMainTitle">
                 <h2>Activités à Marseille</h2>
             </div>
-            <!--------- ACTIVITY TITLE END --------->
-            <section class="activity">
+            <div class="activity">
                 <article class="WideStyle">
                     <img src="Images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Une photo du Vieux Port avec une vue sur les quais et ses bateau">
-                    <figcaption>
+                    <div class="activityContent">
                     <h3 class="activityTitle">Vieux Port</h3>
-                    </figcaption>
+                    </div>
                 </article>
-                <!------------------------------------------------------------------------------------------->
                 <div class="noWideStyle">
                     <article>
                         <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Une photo en contre-plongé du Fort de Pomègues et de ses masses rocheuse au ton blanchatre">
-                        <figcaption>
+                        <div class="activityContent">
                             <h3 class="activityTitle">Fort de Pomègues</h3>
-                        </figcaption>
+                        </div>
                     </article>
                     <article>
                         <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Une vue imprenable sur l'Île du Frioul flottant sur la Méditerranée">
-                        <figcaption>
+                        <div class="activityContent">
                             <h3 class="activityTitle">Île du Frioul</h3>
-                        </figcaption>
+                        </div>
                     </article>
                 </div>
-                <!------------------------------------------------------------------------------------------->
                 <article class="WideStyle">
                     <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Une vue magnifique sur les massifs du Parc nationale des Calanques">
-                    <figcaption>
+                    <div class="activityContent">
                         <h3 class="activityTitle">Parc national des Calanques</h3>
-                    </figcaption>
+                    </div>
                 </article>
-                <!------------------------------------------------------------------------------------------->
                 <div class="noWideStyle">
                     <article>
                         <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo de l'eglise Notre-Dame-De-La-Garde avec ses habitations environnantes">
-                        <figcaption>
+                        <div class="activityContent">
                             <h3 class="activityTitle">Notre-Dame-De-La-Garde</h3>
-                        </figcaption>
+                        </div>
                     </article>
                     <article>
                         <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Un cliché en contre-plongé du Parc Longchamp et de sa magnifique fontaine et de ses jardins">
-                        <figcaption>
+                        <div class="activityContent">
                             <h3 class="activityTitle">Parc Longchamp</h3>
-                        </figcaption>
+                        </div>
                     </article>
                 </div>
-            </section>
-
-            <section class="activityResponsive1024">
+            </div>
+            <!--RESPONSIVE ACTIVITY-->
+            <div class="activityResponsive1024">
                 <article>
                     <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Une photo du Vieux Port avec une vue sur les quais et ses bateau">
-                    <figcaption>
+                    <div class="activityContent">
                         <h3 class="activityTitle">Vieux Port</h3>
-                    </figcaption>
+                    </div>
                 </article>
-                <!------------------------------------------------------------------------------------------->
                     <article>
                         <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Une photo en contre-plongé du Fort de Pomègues et de ses masses rocheuse au ton blanchatre">
-                        <figcaption>
+                        <div class="activityContent">
                             <h3 class="activityTitle">Fort de Pomègues</h3>
-                        </figcaption>
+                        </div>
                     </article>
                     <article>
                         <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Une vue imprenable sur l'Île du Frioul flottant sur la Méditerranée">
-                        <figcaption>
+                        <div class="activityContent">
                             <h3 class="activityTitle">Île du Frioul</h3>
-                        </figcaption>
+                        </div>
                     </article>
-                <!------------------------------------------------------------------------------------------->
                 <article>
                     <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Une vue magnifique sur les massifs du Parc nationale des Calanques">
-                    <figcaption>
+                    <div class="activityContent">
                         <h3 class="activityTitle">Parc national des Calanques</h3>
-                    </figcaption>
+                    </div>
                 </article>
-                <!------------------------------------------------------------------------------------------->
                     <article>
                         <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo de l'eglise Notre-Dame-De-La-Garde avec ses habitations environnantes">
-                        <figcaption>
+                        <div class="activityContent">
                             <h3 class="activityTitle">Notre-Dame-De-La-Garde</h3>
-                        </figcaption>
+                        </div>
                     </article>
                     <article>
                         <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Un cliché en contre-plongé du Parc Longchamp et de sa magnifique fontaine et de ses jardins">
-                        <figcaption>
+                        <div class="activityContent">
                             <h3 class="activityTitle">Parc Longchamp</h3>
-                        </figcaption>
+                        </div>
                     </article>
-            </section>
-            <!----------------------- ACTIVITY END ----------------------->
+                </div>
         </main>
-        <!----------------------- MAIN END ----------------------->
-        <!--------------------------------- FOOTER START ------------------------------------------>
+        <!--FOOTER-->
         <footer>
-                <!--------------- FOOTER LEFT --------------->
                 <ul>
-                    <h3>A propos</h3>
+                    <li><span>A propos</span></li>
                     <li><a>Fonctionnement du site</a></li>
                     <li><a>Conditions générales de vente</a></li>
                     <li><a>Données et confidentialités</a></li>
                 </ul>
-                <!--------------- FOOTER MIDDLE --------------->    
                 <ul>
-                    <h3><a>Nos hébergement</a></h3>
+                    <li><span>Nos hébergements</span></li>
                     <li><a>Charte qualité</a></li>
                     <li><a>Soumettre votre hotel</a></li>
                 </ul>
-                <!--------------- FOOTER RIGHT --------------->    
                 <ul>
-                    <h3><a>Assistance</a></h3>
+                    <li><span>Assistance</span></li>
                     <li><a>Centre d'aide</a></li>
                     <li><a>Nous contacter</a></li>
                 </ul>
         </footer>
-        <!--------------------------------- FOOTER END ------------------------------------------>
 </body>
 
 </html>
