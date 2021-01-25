@@ -46,16 +46,16 @@ main, header{
     border-top: 3px solid #0065FC;
     color: #0065FC;
 }
-
+/******* SIGNUP BUTTON SETTINGS *******/
 .signUp{
     font-weight: 600;
     color: #0065FC;
 }
-
+/******* RESPONSIVE SIGNUP BUTTON SETTINGS (defaut display:none; "in desk") *******/
 .signUpResponsive{
     display: none;
 }
-
+/******* RESPONSIVE NAVBAR SETTINGS (defaut display:none; "in desk") *******/
 .navMenuResponsive{
     display: none;
 }
@@ -106,7 +106,7 @@ main, header{
     font-weight: 600;
     font-size: medium;
 }
-
+/******* RESPONSIVE SEARCHBAR (defaut display:none; "in desk") *******/
 .responsiveSearchbar{
     display: none;
     width: 100%;
@@ -119,12 +119,12 @@ main, header{
     flex-wrap: wrap;
     font-weight: 600;
 }
-
+/******* FILTER TILTE LEFT *******/
 .filtersTitle{
     margin-right: 50px;
     line-height: 55px;
 }
-
+/******* FILTERS BUTTON *******/
 .subFilters{
     display: flex;
     align-items: center;
@@ -175,7 +175,7 @@ main, header{
     font-size: larger;
     color:#0065FC;
 }
-
+/******* MAIN CONTENT (Container of HOST/MOST POPULAR) SETTINGS *******/
 .mainContent{
     display: flex;
     width: 100%;
@@ -194,13 +194,13 @@ main, header{
     margin-left: 2%;
 }
 
-.hostingArticle{
+.hostingContainer{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
 }
 
-.hosting article{
+.hostingContainer article{
     padding: 0.5rem;
     margin: 1rem;
     width: 240px;
@@ -217,9 +217,9 @@ main, header{
     cursor: pointer;
 }
 
-.hostingFigure img{
+.hostingContainer article img{
     display: inline-flex;
-    width: 240px;
+    width: 100%;
     height: 140px;
     object-fit: cover;
     border-radius: 0.8rem 0.8rem 0rem 0rem;
@@ -242,7 +242,7 @@ main, header{
     font-weight: 600;
     color: black;
 }
-
+/************* ICONS COLOR **************/
 .iNoColor{
     color: rgb(212, 212, 212);
 }
@@ -372,7 +372,7 @@ main, header{
 .activityTitle h3{
     padding: 2rem;
 }
-
+/*************** FOOTER SETTINGS *****************/
 footer{
     background-color: #F2F2F2;
     width: 100%;
@@ -412,11 +412,11 @@ footer ul li span{
         display: inline-flex;
         justify-content: space-around;
     }
-
+    /******* DESK NAVMENU SETTINGS *******/
     .navMenu{
         display: none;
     }
-
+    /******* RESPONSIVE DESK NAVMENU SETTINGS *******/
     .navMenuResponsive{
         display: flex;
         height: 40px;
@@ -441,7 +441,7 @@ footer ul li span{
         border-bottom: 3px #0065FC solid;
         color: #0065FC;
     }
-
+    /******* MAIN TITLE OF BODY/MAIN *******/
     .mainTitle{
         font-size: 10px;
         justify-content: center;
@@ -453,7 +453,7 @@ footer ul li span{
         font-size: medium;
         font-weight: 400;
     }
-
+    /******* SIGNUP BUTTON SETTINGS *******/
     .signUp{
         display: none;
     }
@@ -469,7 +469,7 @@ footer ul li span{
     .signUpResponsive:hover{
         cursor: pointer;
     }
-
+    /******* INFO SETTINGS *******/
     .info{
         width: 100%;
     }
@@ -478,11 +478,11 @@ footer ul li span{
         font-size: larger;
         color: #0065FC;
     }
-
+    /******* DESK SEARCHBAR SETTINGS *******/
     .searchbar{
         display: none;
     }
-
+    /******* RESPONSIVE SEARCHBAR SETTINGS *******/
     .responsiveSearchbar{
         display: flex;
         justify-content: center;
@@ -517,6 +517,8 @@ footer ul li span{
         border-radius: 1rem 0rem 0rem 1rem;
         border: none;
     }
+
+    /******* FILTERS SETTINGS *******/
     .filters{
         flex-direction: column;
         height: auto;
@@ -541,13 +543,15 @@ footer ul li span{
         transition: scale, 0.2s ease;
         box-shadow: 0px 0px 15px rgb(247, 247, 247);
     }
+
+    /******* MAIN CONTENT ( Container of HOST/MOST POPULAR) SMARTPHONE SETTINGS *******/
     .mainContent{
         flex-direction: column-reverse;
         padding: 1rem;
         display: flex;
         width: auto;
     }
-
+    /******* MOST POPULAR SETTINGS *******/
     .mostPopular h2{
         font-size: larger;
         justify-content: space-around;
@@ -596,11 +600,11 @@ footer ul li span{
     .mostPopularArticle span{
         font-weight: 600;
     }
-
+    /******* RATTING STARTS SETTINGS *******/
     .ratingMostPopular{
         margin: 0px 0px 0px 10px;
     }
-
+    /******* HOSTING SETTINGS *******/
     .hosting{
         width: 100%;
         padding: 0;
@@ -639,7 +643,7 @@ footer ul li span{
         font-weight: 600;
         color: black;
     }
-
+    /******* ACTIVITY SETTINGS *******/
     .activity{
         height: fit-content;
         flex-direction: column;
@@ -657,7 +661,7 @@ footer ul li span{
     .activity .activityContent{
         font-size: small;
     }
-
+    /******* FOOTER SETTINGS *******/
     footer{
         flex-direction: column;
     }
@@ -669,29 +673,29 @@ footer ul li span{
 
 
 @media screen and (max-width: 1024px){
-    
+    /******* LOGO SETTINGS *******/
     .logoReservia{
         padding: 0rem 1rem;
     }
-
+    /******* NAV MENU CLICKABLE SETTINGS *******/
     .navMenu a{
         color: rgb(95, 95, 95);
         text-decoration: none;
         padding: 20px;
         border-top: transparent 3px solid;
     }
-
+    /******* FILTERS SETTINGS *******/
     .filters{
         display: flex;
         margin-top: 2rem;
         flex-wrap: wrap;
         font-weight: 600;
     }
-
+    /******* MAIN TITLE OF BODY *******/
     .mainTitle{
         padding: 1rem;
     }
-
+    /******* SEARCHBAR SETTINGS *******/
     .searchbar{
         margin: 0px 1rem;
     }
@@ -702,7 +706,12 @@ footer ul li span{
         width: 20%;
         padding: 10px;
     }
-
+    /******* MAIN CONTENT ( Container of HOST/MOST POPULAR) SETTINGS *******/
+    .mainContent{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    /******* HOST SETTINGS *******/
     .hosting{
         flex-wrap: wrap;
         background-color: white;
@@ -711,12 +720,7 @@ footer ul li span{
         margin-top: 1rem;
         padding: 0;
     }
-
-    .mainContent{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
+    /******* MOST POPULAR SETTINGS *******/
     .mostPopular{
         width: 100%;
         background-color: #F2F2F2;
@@ -749,7 +753,7 @@ footer ul li span{
         margin-right: auto;
         justify-content: space-around;
     }
-
+    /******* ACTIVITY SETTINGS *******/
     .activity{
         display: none;
     }
@@ -788,8 +792,10 @@ footer ul li span{
     }
 }
 
+/************************* ADAPTIVE ACTIVITY SECTION AND WIDTH CONTENT ***************************/
+/*************************************************************************************************/
 @media screen and (max-width: 760px){
-
+    /******* ADAPTIVE HOST SETTINGS *******/
     .hosting Article{
         width: 90%;
     }
@@ -797,7 +803,7 @@ footer ul li span{
     .hosting img{
         width: 100%;
     }
-
+    /******* ADAPTIVE ACTIVITY SETTINGS *******/
     .activityResponsive1024{
         width: 100%;
     }
