@@ -38,7 +38,7 @@ main, header{
 .navMenu a{
     color: rgb(95, 95, 95);
     text-decoration: none;
-    padding: 20px 10px;
+    padding: 20px 2.5%;
     border-top: transparent 3px solid;
 }
 
@@ -233,6 +233,10 @@ main, header{
     font-weight: 600;
     font-size: large;
     margin: 0;
+}
+
+.hostingFigure .hostingContent span{
+    font-weight: 600;
 }
 
 .moreHostingContent{
