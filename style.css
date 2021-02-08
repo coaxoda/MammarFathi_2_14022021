@@ -311,14 +311,14 @@ main, header{
 
 .mostPopularArticleContent{
     display: block;
-    margin: 0 10px;
+    margin: 0px 10px;
     flex-direction: column;
     margin-right: auto;
     justify-content: space-around;
 }
 
 .mostPopularArticleContent, h3, p{
-    margin: 5px 5px 5px 5px;
+    margin: 5px auto 5px 5px;
 }
 
 /************** ACTIVITY SECTION ***************/
