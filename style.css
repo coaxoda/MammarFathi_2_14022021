@@ -318,7 +318,7 @@ main, header{
 }
 
 .mostPopularArticleContent, h3, p{
-    margin: 5px px 5px 5px;
+    margin: 5px 5px 5px 5px;
 }
 
 /************** ACTIVITY SECTION ***************/
@@ -395,7 +395,7 @@ footer ul li{
 
 footer ul li a:hover{
     cursor: pointer;
-    text-decoration: underline 1px #414141;
+    text-decoration: underline #414141;
 }
 
 footer ul li span{
